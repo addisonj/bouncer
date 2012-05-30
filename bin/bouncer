@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+
+// deps
+
+var program = require("commander")
+var fs = require("fs")
+var path = require('path')
+var lib  = path.join(path.dirname(fs.realpathSync(__filename)), '../lib')
+var Bouncer = require(lib + "/Bouncer")
+console.log(Bouncer)
+
+program
+  .version("0.0.1")
+  .option("-c, --conf [path]", "Configuration File (defaults to ~/.bouncer.json)")
+  .parse(process.argv)
+
+
+var confFile = program.conf || "~/.bouncer.json" 
+
+console.log("starting with config file", confFile)
+fs.readFile(confFile, "utf8", function(err, conf) {
+  conf = JSON.parse(conf)
+  if (err) throw err
+
+  var bouncer = new Bouncer(conf)
+  bouncer.start()
+})
+
+
