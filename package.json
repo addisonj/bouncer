@@ -2,7 +2,7 @@
   "author": "Addison Higham <addisonj@gmail.com>",
   "name": "bouncer",
   "description": "A service router that uses MDNS and bouncy to do magic!",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "github.com/addisonj/bouncer.git"
