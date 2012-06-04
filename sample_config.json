@@ -1,0 +1,11 @@
+{
+  "port" : 8000,
+  "secret" : "mysecret",
+  "key": "123456789123",
+  "globalFallback" : "http://mydomain.com",
+  "localOnly": false,
+  "services" : {
+    "service1" : "service1.mydomain.com",
+    "service2" : "service2.mydomain.com",
+  }
+}
