@@ -12,14 +12,17 @@ For bouncy to be useful, you need to redirect a wildcard subdomain to localhost 
 brew install dnsmasq
 ```
 2. copy the example config
+
 ``` 
 cp /usr/local/Cellar/dnsmasq/2.55/dnsmasq.conf.example /usr/local/etc/dnsmasq.conf
 ```
 3. edit dnsmasq.conf to include the following
+
 ```
 address=/com.local/127.0.0.1
 listen-address=127.0.0.1
 ```
+
 where "com.local" is the domain you want to redirect on, I use dev.local
 4. (optional) Add the dnsmasq launchd config (provided by homebrew) to your system. Homebrew tells you how to do this.
 
