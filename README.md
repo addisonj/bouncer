@@ -25,13 +25,13 @@ where "com.local" is the domain you want to redirect on, I use dev.local
 4. (optional) Add the dnsmasq launchd config (provided by homebrew) to your system. Homebrew tells you how to do this.
 
 5. Add your localhost to you list of DNS servers
-System Preferences > Network > Advanced (on your preffered adapter) > DNS
-Now add your list of servers (I use google DNS to be faster!)
-```
-127.0.0.1
-8.8.8.8
-8.8.4.4
-```
+  System Preferences > Network > Advanced (on your preffered adapter) > DNS
+  Now add your list of servers (I use google DNS to be faster!)
+  ```
+  127.0.0.1
+  8.8.8.8
+  8.8.4.4
+  ```
 
 ###Installation
 1. install it
