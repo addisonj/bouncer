@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/addisonj/bouncer.png)](http://travis-ci.org/addisonj/bouncer)
 #Bouncer
 Bouncer is a simple router that uses MDNS and substack's bouncy to magically discover your apps and services to hit and fallback when neccessary. 
 
